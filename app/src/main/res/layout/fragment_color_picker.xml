@@ -1,0 +1,105 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="350dp"
+    android:orientation="vertical"
+    tools:context="irobot.test.assignment.paint.color.picker.ColorPickerFragment">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="4dp"
+        android:gravity="center_horizontal"
+        android:text="Pick a color"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="Red"/>
+
+        <SeekBar
+            android:id="@+id/ColorPickerFragment_seekBar_red"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:progress="0"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="Green"/>
+
+        <SeekBar
+            android:id="@+id/ColorPickerFragment_seekBar_green"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:progress="0"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="Blue"/>
+
+
+        <SeekBar
+            android:id="@+id/ColorPickerFragment_seekBar_blue"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:progress="0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/border"
+        android:padding="4dp">
+
+        <View
+            android:id="@+id/ColorPickerFragment_View_color"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@android:color/black"></View>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/ColorPickerFragment_select_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Select"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
